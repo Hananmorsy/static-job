@@ -1,0 +1,124 @@
+.jobItem{
+    border-right: 2px soild #141414;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+.jobInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+.qulified{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.qulified > button{
+    border: none;
+    background-color: hsl(180, 52%, 96%);
+    padding: 6px;
+    font-weight: bolder;
+    color: hsl(180, 29%, 50%);
+}
+p{
+    margin: 0;
+}
+.companyName{
+    color:  hsl(180, 54%, 49%);
+    font-weight: bold;
+}
+.newlabel{
+    background-color: hsl(180, 54%, 49%) ;
+    color: white;
+    width: auto;
+    display: inline-flex;
+    border-radius: 15px;
+    padding: 4px 8px 4px 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.featuredlabal{
+    background-color:hsl(180, 14%, 20%);
+    color: white;
+    width: auto;
+    padding: 4px 8px 4px 8px;
+    display: inline-flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.firstRowInfo{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    
+    
+}
+.btn:hover{
+    background-color:  hsl(180, 52%, 96%);
+}
+.btn1:hover{
+    background-color:rgb(156, 233, 181);
+    color: black;
+}
+.position{
+    font-weight: bolder;
+}
+.lastRowInfo{
+    color: gray;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+ul li:first-child{
+    list-style-type: none;
+}
+@media only screen and (max-width: 700px) {
+    .jobItem{
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+        height: 200px;
+        
+    }
+    .qulified{
+        border-top: 1px solid rgb(201, 198, 198);
+        flex-grow: 1;
+        align-items: center;
+       margin-left: 0;
+       width: 100%;
+       justify-content: start;
+
+    }
+    .qulified > button {
+         height: 50%;
+    }
+    .jobItem > img {
+        width: 40px;
+        position: absolute;
+        top: -20px; 
+    }
+    .jobInfo{
+        padding-top: 20px;
+        width: 100%;
+        gap: 20px;
+    }
+    .lastRowInfo{
+        width: 100%;
+    }
+
+}

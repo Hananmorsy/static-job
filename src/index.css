@@ -1,0 +1,44 @@
+@font-face {
+  font-family:"LeagueSpartan" ;
+  src: url(./assets/fonts/LeagueSpartan-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family:"LeagueSpartan" ;
+  src: url(./assets/fonts/LeagueSpartan-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family:"LeagueSpartan" ;
+  src: url(./assets/fonts/LeagueSpartan-ExtraBold.ttf);
+  font-weight: bolder;
+}
+html{
+  width: 100%;
+  height: 100%;
+  font-family:"LeagueSpartan" ;
+  background-color: hsl(180, 52%, 96%) ;
+
+}
+body{
+  width: 100%;
+height: 1500px;
+  margin: 0;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  
+}
+@media only screen and (max-width: 700px) {
+  html{
+    height:auto;
+    background-color: hsl(180, 52%, 96%);
+  }
+  body{
+    height: auto;
+  }
+}
